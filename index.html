@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gusti Alifiraqsha Akbar - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-text fade-in">
+            <h1>Halo, saya<br />Gusti Alifiraqsha Akbar</h1>
+            <p class="subtitle"></p>
+            <p>
+              Saya adalah seorang Mahasiswa di UPN Veteran Jawa Timur Fakultas
+              Ilmu Komputer & Prodi Informatika. Saya memiliki minat dalam dunia
+              IT salah satunya Website developer.
+            </p>
+            <a href="#about" class="cta-button"
+              >Let's Talk <i class="fas fa-arrow-right"></i
+            ></a>
+
+            <div class="social-links">
+              <a href="https://github.com/HOFii"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/gusti-alifiraqsha-akbar-894086360/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="home-image fade-in">
+            <img src="image/formal.jpg" alt="diriku" class="profile-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-content">
+          <div class="fade-in">
+            <img src="image/saya lagi.jpg" alt="About Me" class="about-img" />
+          </div>
+          <div class="about-text fade-in">
+            <p>
+              Halo! Saya Gusti Alifiraqsha Akbar, seorang Mahasiswa Fakultas
+              Ilmu Komputer Program Studi Informatika UPN Veteran Jawa Timur.
+              Saya memiliki passion besar dalam dunia teknologi. Saya tertarik
+              untuk terus belajar dan mengembangkan kemampuan dalam bidang web
+              development.
+            </p>
+            <p>
+              Saat ini saya fokus untuk mengembangkan skill dalam HTML, CSS,
+              JavaScript, dan berbagai framework modern seperti Laravel dan
+              NextJS. Tujuan saya adalah menjadi seorang full-stack developer
+              yang dapat menciptakan aplikasi web yang user-friendly dan
+              berkualitas tinggi.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills fade-in">
+          <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Struktur web yang semantic dan modern</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Styling yang responsif dan menarik</p>
+          </div>
+          <div class="skill-item">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>Interaktivitas dan fungsi dinamis pada website</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">My Experience</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in" onclick="openModal('project1')">
+                    <img src="image/comunityTranverAgen.png" alt="Web Portfolio" class="project-image">
+                    <div class="project-info">
+                        <div class="project-category">Front-End Web Development</div>
+                        <h3 class="project-title">Landing Page Traver Agent</h3>
+                        <p class="project-description">Website Landing Page responsif yang menampilkan profil sebuah Agent Travel Profesional.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openModal('project2')">
+                    <img src="image/landingPageCompany.png" alt="Landing Page" class="project-image">
+                    <div class="project-info">
+                        <div class="project-category">Front-End Web Development</div>
+                        <h3 class="project-title">Website Company Profile</h3>
+                        <p class="project-description">Website Company Profile dengan desain modern dan animasi yang menarik untuk meningkatkan trafic perusahaan.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" onclick="openModal('project3')">
+                    <img src="image/beneran.png" alt="Web App" class="project-image">
+                    <div class="project-info">
+                        <div class="project-category">Web Application Dekstop</div>
+                        <h3 class="project-title">Website Kasir Berbasis Dekstop</h3>
+                        <p class="project-description">Website Kasir Berbasis Dekstop untuk mempermudah pemilik dalam mencatat barang keluar dan masuk.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML & CSS</span>
+                            <span class="tech-tag">PHP 8</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23667eea'/%3E%3Crect x='100' y='100' width='600' height='200' fill='%23fff' rx='15'/%3E%3Ccircle cx='200' cy='150' r='30' fill='%23ff6b6b'/%3E%3Crect x='260' y='130' width='200' height='15' fill='%23ddd' rx='8'/%3E%3Crect x='260' y='155' width='150' height='12' fill='%23ddd' rx='6'/%3E%3Crect x='260' y='175' width='180' height='12' fill='%23ddd' rx='6'/%3E%3Crect x='500' y='130' width='120' height='60' fill='%23667eea' rx='8'/%3E%3Ctext x='400' y='250' text-anchor='middle' fill='%23333' font-size='18' font-family='Arial'%3EPersonal Portfolio Website%3C/text%3E%3Ctext x='400' y='280' text-anchor='middle' fill='%23666' font-size='14' font-family='Arial'%3EResponsive Web Design%3C/text%3E%3C/svg%3E" alt="Portfolio Project" class="modal-image">
+            <div class="modal-body">
+                <div class="modal-category">Web Development</div>
+                <h2 class="modal-title">Personal Portfolio Website</h2>
+                <p class="modal-description">
+                    Website portfolio pribadi yang dirancang untuk menampilkan profil profesional, skills, dan project-project yang telah dikerjakan. Website ini dibuat dengan pendekatan mobile-first design dan menggunakan teknologi web modern untuk memastikan performa yang optimal di semua perangkat.
+                    <br><br>
+                    Fitur-fitur utama meliputi navigasi yang smooth, animasi yang halus, form kontak yang fungsional, dan desain yang responsif. Website ini juga dioptimasi untuk SEO dan memiliki loading time yang cepat.
+                </p>
+                <div class="modal-tech">
+                    <h4>Teknologi yang Digunakan:</h4>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23764ba2'/%3E%3Crect x='50' y='50' width='700' height='300' fill='%23fff' rx='20'/%3E%3Crect x='80' y='80' width='640' height='60' fill='%23667eea' rx='10'/%3E%3Crect x='100' y='170' width='150' height='120' fill='%23ff6b6b' rx='10'/%3E%3Crect x='280' y='170' width='150' height='120' fill='%2352c41a' rx='10'/%3E%3Crect x='460' y='170' width='150' height='120' fill='%23ffa500' rx='10'/%3E%3Ctext x='400' y='320' text-anchor='middle' fill='%23333' font-size='18' font-family='Arial'%3EModern Landing Page%3C/text%3E%3Ctext x='400' y='340' text-anchor='middle' fill='%23666' font-size='14' font-family='Arial'%3EUI/UX Design Project%3C/text%3E%3C/svg%3E" alt="Landing Page Project" class="modal-image">
+            <div class="modal-body">
+                <div class="modal-category">UI/UX Design</div>
+                <h2 class="modal-title">Modern Landing Page</h2>
+                <p class="modal-description">
+                    Landing page dengan desain modern yang fokus pada konversi dan user engagement. Menggunakan prinsip-prinsip design thinking untuk menciptakan pengalaman pengguna yang optimal dan meningkatkan tingkat konversi.
+                    <br><br>
+                    Desain ini menggabungkan elemen visual yang menarik dengan call-to-action yang strategis, animasi micro-interactions, dan layout yang intuitif untuk memandu pengguna menuju tujuan bisnis.
+                </p>
+                <div class="modal-tech">
+                    <h4>Teknologi yang Digunakan:</h4>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="#" class="modal-link secondary">Design File</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%2352c41a'/%3E%3Crect x='60' y='60' width='680' height='280' fill='%23fff' rx='15'/%3E%3Ccircle cx='150' cy='120' r='35' fill='%23667eea'/%3E%3Ccircle cx='300' cy='120' r='35' fill='%23ff6b6b'/%3E%3Ccircle cx='450' cy='120' r='35' fill='%23ffa500'/%3E%3Ccircle cx='600' cy='120' r='35' fill='%23764ba2'/%3E%3Crect x='100' y='180' width='600' height='15' fill='%23ddd' rx='8'/%3E%3Crect x='100' y='210' width='400' height='15' fill='%23ddd' rx='8'/%3E%3Crect x='100' y='240' width='500' height='15' fill='%23ddd' rx='8'/%3E%3Crect x='100' y='270' width='350' height='15' fill='%23ddd' rx='8'/%3E%3Ctext x='400' y='320' text-anchor='middle' fill='%23333' font-size='18' font-family='Arial'%3EDashboard Analytics%3C/text%3E%3Ctext x='400' y='340' text-anchor='middle' fill='%23666' font-size='14' font-family='Arial'%3EWeb Application%3C/text%3E%3C/svg%3E" alt="Dashboard Project" class="modal-image">
+            <div class="modal-body">
+                <div class="modal-category">Web Application</div>
+                <h2 class="modal-title">Dashboard Analytics</h2>
+                <p class="modal-description">
+                    Dashboard web application yang menampilkan data analytics dengan visualisasi yang interaktif dan real-time. Aplikasi ini dirancang untuk membantu pengguna memahami data bisnis mereka dengan mudah melalui chart, grafik, dan metrics yang informatif.
+                    <br><br>
+                    Dashboard ini dilengkapi dengan fitur filtering data, export report, dan notifikasi real-time. Interface yang clean dan intuitif memungkinkan pengguna untuk dengan mudah navigasi dan menganalisis data mereka.
+                </p>
+                <div class="modal-tech">
+                    <h4>Teknologi yang Digunakan:</h4>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                </div>
+                <div class="modal-links">
+                    <a href="#" class="modal-link secondary">Documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+                
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title fade-in" style="color: white">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-form fade-in">
+            <form>
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Kirim</button>
+            </form>
+          </div>
+
+          <div class="contact-info fade-in">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>alifiraqshaakbar@email.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+62 852-8292-3118</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Surabaya, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Gusti Alifiraqsha Akbar. Build make a ❤️</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
